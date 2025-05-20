@@ -15,7 +15,10 @@ connectCloudinary()
 
 //middlewares
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: 'https://full-stack-project-frontend-9man.onrender.com', // Allow the frontend's URL
+  credentials: true, // Allow cookies (optional)
+}));
 
 //api endpoints 
 app.use('/api/admin',adminRouter)   //localhost:4000/api/admin

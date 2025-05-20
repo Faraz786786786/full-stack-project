@@ -44,7 +44,7 @@ const Navbar = () => {
         <NavLink to='/contact'>
           <li className='py-1'>CONTACT</li>
         </NavLink>
-        <NavLink to={import.meta.env.VITE_ADMIN_URL} target="_blank" rel="noopener noreferrer">
+        <NavLink to="https://full-stack-project-admin.onrender.com" target="_blank" rel="noopener noreferrer">
           <li className=' border px-5 text-xs py-1.5 rounded-full'>ADMIN PANEL</li>
         </NavLink>
       </ul>
@@ -104,7 +104,7 @@ const Navbar = () => {
               <p className='px-4 py-2 rounded inline-block'>CONTACT</p>
             </NavLink>
 
-            <NavLink onClick={() => setShowMenu(false)} to={import.meta.env.VITE_ADMIN_URL} className={({ isActive }) =>
+            <NavLink onClick={() => setShowMenu(false)} to="https://full-stack-project-admin.onrender.com" className={({ isActive }) =>
               isActive ? 'text-white bg-[#5f6fff] sm:text-lg md:text-xl' : 'text-gray-700 sm:text-base md:text-lg'
             }>
               <p className='px-4 py-2  rounded inline-block'>Admin</p>
